@@ -9,3 +9,11 @@
 .title {
     @apply text-3xl md:text-4xl font-bold leading-snug mb-5;
 }
+
+.blob1 {
+    @apply w-80 h-80 bg-color-blob absolute rounded-full top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden;
+}
+
+.blob2 {
+    @apply w-80 h-80 bg-color-secondary absolute rounded-full right-0 bottom-10 -z-10 blur-2xl opacity-30 overflow-hidden;
+}

@@ -59,8 +59,10 @@
 
     <main>
         <section id="home" class="relative">
-            <div class="w-80 h-80 bg-color-blob absolute rounded-full top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden"></div>
-            <div class="w-80 h-80 bg-color-secondary absolute rounded-full right-0 bottom-10 -z-10 blur-2xl opacity-30 overflow-hidden"></div>
+            <div class="blob1">
+            </div>
+            <div class="blob2">
+            </div>
             <div class="container p-20">
                 <div class="flex flex-col items-center z-20 md:flex-row">
                     <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
@@ -76,6 +78,7 @@
                 </div>
             </div>
         </section>
+
         <section id="features" class="bg-color-primary-light">
             <div class="container py-20">
                 <div class="text-center m-auto mb-20 md:w-1/2">
@@ -83,26 +86,49 @@
                     <h1 class="title">Easy To Manage Your All Payments By Our App</h1>
                 </div>
                 <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
-                    <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
                         <div class="bg-color-secondary rounded-2xl py-5 px-6 inline-block">
                             <i class="fa-solid fa-calendar-days text-4xl"></i>
                         </div>
                         <h3 class="text-xl font-bold py-4">Expense Trackering</h3>
                         <p class="leading-relaxed">We use an application designed a testing gnose to keep away</p>
                     </div>
-                    <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
                         <div class="bg-color-secondary rounded-2xl py-5 px-6 inline-block">
                             <i class="fa-solid fa-calendar-days text-4xl"></i>
                         </div>
                         <h3 class="text-xl font-bold py-4">Finance Snapshot</h3>
                         <p class="leading-relaxed">We use an application designed a testing gnose to keep away</p>
                     </div>
-                    <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
                         <div class="bg-color-secondary rounded-2xl py-5 px-6 inline-block">
                             <i class="fa-solid fa-calendar-days text-4xl"></i>
                         </div>
                         <h3 class="text-xl font-bold py-4">Support 24/24</h3>
                         <p class="leading-relaxed">We use an application designed a testing gnose to keep away</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="saving-money">
+            <div class="container py-20 relative">
+                <div class="blob1"></div>
+                <div class="blob2"></div>
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 mb-12">
+                        <img src="img/hero3.png" alt="">
+                    </div>
+                    <div class="text-center md:text-left md:w-1/2 md:ml-20">
+                        <h4 class="font-bold text-color-secondary mb-4">Saving Money</h4>
+                        <h1 class="title mb-4">Best Financing App To Save Your Money</h1>
+                        <p class="leading-relaxed mb-10">Best financing app ever in the world. Easy to use and very user
+                            friendly for mobile banking. You can control your card easily and send money some one just
+                            one click.</p>
+                        <button class="btn">Read More</button>
                     </div>
                 </div>
             </div>
@@ -120,7 +146,7 @@
             faSolid.classList.toggle("fa-xmark");
         })
 
-        hlink.forEach(link , () => {
+        hlink.forEach(link, () => {
             link.addEventListener('click', () => {
                 menu.classList.toggle("hidden");
                 faSolid.classList.toggle("fa-xmark");
