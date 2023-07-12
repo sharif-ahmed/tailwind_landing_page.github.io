@@ -39,8 +39,8 @@
             </div>
             <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
                 <ul class="h-full grid place-items-center py-20">
-                    <li><a id="hlink" href="" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
-                    <li><a id="hlink" href=""
+                    <li><a id="hlink" href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hlink" href="#features"
                             class="hover:text-color-secondary ease-in duration-200">Features</a></li>
                     <li><a id="hlink" href="#testimonial"
                             class="hover:text-color-secondary ease-in duration-200">Testimonial</a>
@@ -51,13 +51,32 @@
                     <li><a id="hlink" href="#contact"
                             class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
 
-                    <li><button
-                            class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">free
-                            trial</button></li>
+                    <li><button class="btn">free trial</button></li>
                 </ul>
             </div>
         </nav>
     </header>
+
+    <main>
+        <section id="home" class="relative">
+            <div class="w-80 h-80 bg-color-blob absolute rounded-full top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden"></div>
+            <div class="w-80 h-80 bg-color-secondary absolute rounded-full right-0 bottom-10 -z-10 blur-2xl opacity-30 overflow-hidden"></div>
+            <div class="container p-20">
+                <div class="flex flex-col items-center z-20 md:flex-row">
+                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                        <h1 class="title">Awesome App for Your Financial.
+                        </h1>
+                        <p class="leading-relaxed mb-10">This should be used to tell a story and let your users know a
+                            little more about app and it’s use, How can benefit them.</p>
+                        <button class="btn">Download App</button>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="img/hero4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script>
         const hamburger = document.querySelector("#hamburger");
